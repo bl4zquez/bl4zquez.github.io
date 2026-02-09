@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>whoami | Cybersecurity Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --fg: #c9d1d9;
+            --green: #00ff9c;
+            --blue: #58a6ff;
+            --red: #ff5f56;
+            --gray: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background-color: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        .terminal {
+            background: #010409;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 25px rgba(0,255,156,0.1);
+        }
+
+        .terminal-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .red { background: var(--red); }
+        .yellow { background: #f1fa8c; }
+        .green { background: var(--green); }
+
+        .prompt {
+            color: var(--green);
+        }
+
+        .command {
+            color: var(--fg);
+        }
+
+        h1, h2 {
+            color: var(--green);
+        }
+
+        nav {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--blue);
+            text-decoration: none;
+            border: 1px solid var(--blue);
+            padding: 10px 16px;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            background: var(--blue);
+            color: #000;
+        }
+
+        section {
+            margin-top: 60px;
+        }
+
+        footer {
+            margin-top: 80px;
+            color: var(--gray);
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .blink {
+            animation: blink 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+
+                <p>
+                    <span class="prompt">$</span>
+                    <span class="command"> whoami</span>
+                </p>
+                <h1>Estudiante de Ciberseguridad</h1>
+
+                <p>
+                    <span class="prompt">$</span>
+                    <span class="command"> cat profile.txt</span>
+                </p>
+                <p>
+                    Pentesting · Blue Team · Labs · Writeups<br>
+                    Aprendiendo a romper cosas… para hacerlas más seguras.
+                </p>
+
+                <p>
+                    <span class="prompt">$</span>
+                    <span class="command"> _</span><span class="blink">█</span>
+                </p>
+            </div>
+
+            <nav>
+                <a href="about.html">Sobre mí</a>
+                <a href="certifications.html">Certificaciones</a>
+                <a href="writeups.html">Writeups</a>
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2>🧠 Focus actual</h2>
+            <p>
+                Actualmente centrado en mejorar habilidades de enumeración,
+                explotación de servicios, escalada de privilegios y análisis
+                defensivo. Trabajo con plataformas como Hack The Box y TryHackMe.
+            </p>
+        </section>
+
+        <section>
+            <h2>⚙️ Tecnologías</h2>
+            <p>
+                Linux · Bash · Python · Networking · Active Directory ·
+                Metasploit · Burp Suite · Nmap · Wireshark
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                © 2026 · Pablo Blázquez Jordán
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
