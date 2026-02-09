@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Writeups | bl4zz</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background: #0b0f14;
+    color: #c9d1d9;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #00ff9c;
+}
+
+.writeup {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+.writeup:hover {
+    background: #010409;
+    box-shadow: 0 0 15px rgba(0,255,156,0.15);
+}
+
+.platform {
+    color: #58a6ff;
+}
+
+.level.easy { color: #00ff9c; }
+.level.medium { color: #f1fa8c; }
+.level.hard { color: #ff5f56; }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>$ ls writeups/</h1>
+
+    <a class="writeup" href="writeups/htb-lame.html">
+        <div>Lame</div>
+        <div class="platform">Hack The Box</div>
+        <div class="level easy">Easy</div>
+    </a>
+
+    <a class="writeup" href="writeups/htb-optimum.html">
+        <div>Optimum</div>
+        <div class="platform">Hack The Box</div>
+        <div class="level medium">Medium</div>
+    </a>
+
+    <a class="writeup" href="writeups/thm-blue.html">
+        <div>Blue</div>
+        <div class="platform">TryHackMe</div>
+        <div class="level easy">Easy</div>
+    </a>
+</div>
+</body>
+</html>
