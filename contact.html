@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contacto | bl4zz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0b0f14;
+    --fg: #c9d1d9;
+    --green: #00ff9c;
+    --blue: #58a6ff;
+    --gray: #8b949e;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    background: var(--blue);
+    color: #000;
+}
+
+h1 {
+    color: var(--green);
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    background: #010409;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 20px rgba(0,255,156,0.15);
+    transform: translateY(-3px);
+}
+
+.label {
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.cv-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: 1px solid var(--green);
+    color: var(--green);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.cv-button:hover {
+    background: var(--green);
+    color: #000;
+}
+
+.value {
+    margin-bottom: 10px;
+}
+
+.value a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.value a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 80px;
+    color: var(--gray);
+    text-align: center;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-button">← Volver al inicio</a>
+
+    <h1>$ cat contact.txt</h1>
+
+    <div class="contact-card">
+        <div class="label">Email</div>
+        <div class="value">
+            <a href="mailto:blazquezjordanpablo@gmail.com">blazquezjordanpablo@gmail.com</a>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <div class="label">GitHub</div>
+        <div class="value">
+            <a href="https://github.com/bl4zquez" target="_blank">
+                https://github.com/bl4zquez
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <div class="label">LinkedIn</div>
+        <div class="value">
+            <a href="https://www.linkedin.com/in/blazquezpablo/" target="_blank">
+                https://www.linkedin.com/in/blazquezpablo
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <div class="label">Curriculum Vitae</div>
+        <div class="value">
+            <a href="Pablo_Blazquez_CV.pdf" download class="cv-button">
+                $ download cv.pdf
+            </a>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>
+            Feel free to reach out. Security is built through collaboration.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>

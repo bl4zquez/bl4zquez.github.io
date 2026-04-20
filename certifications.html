@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Certificaciones | bl4zz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0b0f14;
+    --fg: #c9d1d9;
+    --green: #00ff9c;
+    --blue: #58a6ff;
+    --yellow: #f1fa8c;
+    --gray: #8b949e;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    background: var(--blue);
+    color: #000;
+}
+
+h1 {
+    color: var(--green);
+    margin-bottom: 40px;
+}
+
+.cert-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.cert-card {
+    background: #010409;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 20px;
+    transition: 0.2s ease;
+}
+
+.cert-card:hover {
+    box-shadow: 0 0 20px rgba(0,255,156,0.15);
+    transform: translateY(-3px);
+}
+
+.cert-title {
+    font-size: 1.2rem;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.cert-org {
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.cert-status {
+    font-weight: bold;
+}
+
+.status-earned {
+    color: var(--green);
+}
+
+.status-progress {
+    color: var(--yellow);
+}
+
+.status-soon {
+    color: var(--gray);
+}
+
+footer {
+    margin-top: 80px;
+    color: var(--gray);
+    text-align: center;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back-button">← Volver al inicio</a>
+
+    <h1>$ ls certificaciones/</h1>
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <div class="cert-title">eJPTv2</div>
+            <div class="cert-org">INE Security</div>
+            <div class="cert-status status-progress">⏳ En progreso</div>
+            <p>
+               Finalizando los conocimientos para obtener la certificación.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            Continuous learning is part of the process.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
